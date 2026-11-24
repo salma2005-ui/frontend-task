@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Card</title>
+  <style>
+    body { font-family: Arial; background: #f0f2f5; display: flex; justify-content: center; padding: 40px; }
+    .card { background: white; width: 320px; padding: 20px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; }
+    .card.dark { background: #222; color: white; }
+    .highlight { border: 3px solid #6b0431; }
+    .skill { display: inline-block; background: #ffe0ec; color: #d6336c; padding: 5px 10px; border-radius: 20px; margin: 4px; font-size: 13px; }
+    button { margin: 5px; padding: 8px 15px; border: none; border-radius: 20px; cursor: pointer; background: #ff5da2; color: white; }
+  </style>
+</head>
+<body>
+
+  <div class="card" id="profileCard">
+    <img id="profileImg" src="IMG_20260121_145619.jpg" alt="Student Photo">
+    <h2 id="studentName">Salma</h2>
+    <p id="studentBio">Front-End Student</p>
+    <p id="studentInfo"></p>
+
+    <h3>Skills</h3>
+    <div id="skillsContainer"></div>
+
+    <br>
+    <button id="changeNameBtn">Change Name</button>
+    <button id="darkModeBtn">Dark Mode</button>
+    <button id="highlightBtn">Highlight Card</button>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
